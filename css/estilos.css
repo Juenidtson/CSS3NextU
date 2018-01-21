@@ -1,0 +1,372 @@
+@font-face {
+    font-family: myFont;
+    src: url(../fonts/DancingScript-Regular.ttf);
+}
+
+* {
+	font-family: myFont;
+}
+
+@media (min-width: 360px) and (max-width: 899px) {
+	body {
+		background-color: #02010a;
+	}
+
+	.contenido{
+		width: 360px;
+		border-radius: 10px 10px 0 0; 
+		display: block;
+		margin: auto;
+	}
+
+	header{
+		background-color: #5b7989;
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+		padding: 0;
+		border-radius: 10px 10px 0 0; 
+		width: 100%;
+		height: 80px;
+	}
+
+	header h1 {
+		color: white;
+		text-shadow: 2px #02010a;
+		text-align: center;
+		width: 100%;
+		margin: auto; 
+	}
+
+	header ul{
+		list-style-type: none;
+		text-align: center;
+		width: 80%;
+		display: flex; 
+		flex-direction: row;
+		margin: auto 50px auto auto; 
+	}
+
+	li {
+		width: 33.3%;
+		margin-top: 0;
+		font-size: 1.3em;
+	}
+
+	li a {
+	    color: white;
+		margin: auto;
+	}
+
+	li a.active { 
+		text-decoration: none;
+	}
+
+	section#imagenCentral {
+		background-color: #82c3a6;
+		margin: auto;
+		padding: 20px;
+	}
+
+	section#imagenSecundaria {
+		display: flex;
+		flex-direction: column;
+		background-color: #d5c75f;
+		margin: auto;
+		padding: 20px;
+	}
+
+	.paisajes {
+		margin: auto;
+		width: 100%;
+		text-align: center;
+		list-style-type: none;
+		font-size: 1.5em;
+	}
+
+	.retratos {
+		margin: auto;
+		width: 100%;
+		text-align: center;
+		list-style-type: none;
+		font-size: 1.5em;
+	}
+
+	img.imagen{
+		display:block;
+		margin:auto;
+		box-shadow: 2px 2px #02010a;
+		width: 80%;
+		max-width: 600px;
+		background-color: #d5c75f;
+		border: solid 1px;
+	}
+
+	figcaption {
+		margin-top: 5px;
+	}
+
+	figcaption a {
+		color: black;
+	}
+
+	img#paisajes:hover {
+		transform: rotate(10deg);
+		box-shadow: 2px 2px #82c3a6;
+		transition-timing-function: linear;
+		transition-duration: 0.5s;
+		border: solid 2px;
+	}
+
+	img#retratos:hover {
+		transform: translate(20px, -5px);
+		box-shadow: 2px 2px #82c3a6;
+		border: solid 2px;
+		transition-timing-function: linear;
+		transition-duration: 0.5s;
+	}
+
+	section div.column {
+		display: flex;
+		flex-direction: column;
+		background-color: #82c3a6;
+	}
+
+	div.columnPyR {
+		width: 100%;
+		margin: auto;
+		padding: 20px 10px;
+	}
+
+	img.column6 {
+		display:block;
+		margin: auto;
+		width: 80%;
+		box-shadow: 2px 2px #02010a;
+	}
+
+	img.uno {
+		filter: blur(10px);
+	}
+
+	img.par {
+		filter: grayscale(100%);
+	}
+
+	img.tres {
+		filter: sepia(90%);
+	}
+
+	footer {
+		display: flex;
+		flex-direction: column;
+		border-radius: 0 0 10px 10px;
+		background-color: #C6d5c5;
+		margin: auto;
+	}
+
+	footer div.contacto{
+		text-align: center;
+		font-size: 1.1em;
+	}
+
+	footer div.terminos{
+		text-align: center;
+		font-size: 1.1em;
+	}
+
+	footer div.redes{
+		text-align: center;
+		font-size: 1.1em;
+	}
+
+	footer div.derechos{
+		text-align: center;
+		font-size: 1.1em;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	body {
+		background-color: #02010a;
+	}
+
+	.contenido{
+		width: 900px;
+		border-radius: 10px 10px 0 0; 
+		display: block;
+		margin: auto;
+	}
+
+	header{
+		background-color: #5b7989;
+		display: flex;
+		flex-direction: row;
+		margin: 0;
+		padding: 0;
+		border-radius: 10px 10px 0 0; 
+		width: 100%;
+		height: 80px;
+	}
+
+	header h1 {
+		color: white;
+		float: left;
+		text-shadow: 2px #02010a;
+		width: 70%;
+		margin: auto auto auto 20px; 
+	}
+
+	header ul{
+		list-style-type: none;
+		text-align: center;
+		width: 30%;
+		display: flex;
+		flex-direction: row;
+		float: right;
+		margin: auto 10px auto auto; 
+	}
+
+	li {
+		width: 33.3%;
+		margin-top: 0;
+		font-size: 1.3em;
+	}
+
+	li a {
+	    color: white;
+		margin: auto;
+	}
+
+	li a.active { 
+		text-decoration: none;
+	}
+
+	section#imagenCentral {
+		background-color: #82c3a6;
+		margin: auto;
+		padding: 20px;
+	}
+
+	section#imagenSecundaria {
+		display: flex;
+		flex-direction: row;
+		background-color: #d5c75f;
+		margin: auto;
+		padding: 20px;
+	}
+
+	.paisajes {
+		margin: auto;
+		width: 50%;
+		text-align: center;
+		list-style-type: none;
+		font-size: 1.5em;
+	}
+
+	.retratos {
+		margin: auto;
+		width: 50%;
+		text-align: center;
+		list-style-type: none;
+		font-size: 1.5em;
+	}
+
+	img.imagen{
+		display:block;
+		margin:auto;
+		box-shadow: 2px 2px #02010a;
+		width: 80%;
+		max-width: 600px;
+		background-color: #d5c75f;
+		border: solid 1px;
+	}
+
+	figcaption {
+		margin-top: 5px;
+	}
+
+	figcaption a {
+		color: black;
+	}
+
+	img#paisajes:hover {
+		transform: rotate(10deg);
+		box-shadow: 2px 2px #82c3a6;
+		transition-timing-function: linear;
+		transition-duration: 0.5s;
+		border: solid 2px;
+	}
+
+	img#retratos:hover {
+		transform: translate(20px, -5px);
+		box-shadow: 2px 2px #82c3a6;
+		border: solid 2px;
+		transition-timing-function: linear;
+		transition-duration: 0.5s;
+	}
+
+	section div.column {
+		display: flex;
+		flex-direction: row;
+		background-color: #82c3a6;
+	}
+
+	div.columnPyR {
+		width: 33.3%;
+		margin: auto;
+		padding: 20px 10px;
+	}
+
+	img.column6 {
+		display:block;
+		margin: auto;
+		width: 80%;
+		box-shadow: 2px 2px #02010a;
+	}
+
+	img.uno {
+		filter: blur(10px);
+	}
+
+	img.par {
+		filter: grayscale(100%);
+	}
+
+	img.tres {
+		filter: sepia(90%);
+	}
+
+	footer {
+		display: flex;
+		flex-direction: row;
+		border-radius: 0 0 10px 10px;
+		background-color: #C6d5c5;
+		margin: auto;
+	}
+
+	footer div.contacto{
+		width: 25%;
+		text-align: center;
+		font-size: 1.1em;
+	}
+
+	footer div.terminos{
+		width: 25%;
+		text-align: center;
+		font-size: 1.1em;
+	}
+
+	footer div.redes{
+		width: 25%;
+		text-align: center;
+		font-size: 1.1em;
+	}
+
+	footer div.derechos{
+		width: 25%;
+		text-align: center;
+		font-size: 1.1em;
+	}
+}
+
